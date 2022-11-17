@@ -39,7 +39,7 @@ class Email{
         $contenido = '<hmtl>';
         $contenido .= "<p><strong>Hola " . $this->email . "</strong> Has creado tu cuenta en
         AppSalon, solo debes confirmarla precionando en el siguiente enlace</p>";        
-        $contenido .="<p>Presiona aquí: <a href='https://shrouded-sands-21529.herokuapp.com/confirmar-cuenta?token=" 
+        $contenido .="<p>Presiona aquí: <a href='https://damp-meadow-13438.herokuapp.com/confirmar-cuenta?token=" 
         .$this->token."'>Confirmar Cuenta</a></p>";
         $contenido .= "<p>Si no solocitaste esta cuenta, ignora el mensaje</p>";
         $contenido .= '</hmtl>';
@@ -72,7 +72,7 @@ class Email{
 
         $contenido = '<hmtl>';
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong>Has solicitado reestablecer tu password, sigue el siguiente enlace para hacerlo.</p>";        
-        $contenido .="<p>Presiona aquí: <a href='https://shrouded-sands-21529.herokuapp.com/recuperar?token=" 
+        $contenido .="<p>Presiona aquí: <a href='https://damp-meadow-13438.herokuapp.com/recuperar?token=" 
         .$this->token."'>Reestablecer Password</a></p>";
         $contenido .= "<p>Si no solocitaste esta cuenta, ignora el mensaje</p>";
         $contenido .= '</hmtl>';
