@@ -67,12 +67,12 @@
         <button
             id="anterior"
             class="boton"
-        >&laquo; Anterior</button>
+        >&#128072; Anterior</button>
 
         <button
             id="siguiente"
             class="boton"
-        >Siguiente &raquo;</button>
+        >Siguiente &#128073;</button>
     </div>
 
 </div>

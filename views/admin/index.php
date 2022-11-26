@@ -21,7 +21,7 @@
 
 <?php 
     if(count($citas) === 0){
-        echo "<h2>No hay citas en esta fecha</h2>";
+        echo "<br><br><h3>En este fecha aún no existen citas</h3>";
     }
 ?>
 
