@@ -10,16 +10,18 @@
     <?php foreach($servicios as $servicio){?>
 
         <li>
-            <p>Nombre: <span><?php echo $servicio->nombre; ?></span></p>
-            <p>Precio: <span>$<?php echo $servicio->precio; ?></span></p>
-
+            <div class="servicios-publicados">
+                <p>Nombre: <span><?php echo $servicio->nombre; ?></span></p>
+                <p>Precio: <span>$<?php echo $servicio->precio; ?></span></p>
+            
             <div class="acciones">
-                <a class="boton" href="/servicios/actualizar?id=<?php echo $servicio->id; ?>">Actualizar</a>
+                <a class="servicios-publicados-actualizar" href="/servicios/actualizar?id=<?php echo $servicio->id; ?>">&#128190; Actualizar</a>
 
                 <form action="/servicios/eliminar" method="POST">
                     <input type="hidden" name="id" value="<?php echo $servicio->id; ?>">
-                    <input type="submit" value="Borrar" class="boton-eliminar">
+                    <input type="submit" value="&#128465; Borrar" class="servicios-publicados-borrar">
                 </form>
+            </div>
             </div>
         </li>
     <?php } ?>
