@@ -32,7 +32,7 @@ class Email{
         $phpmailer->isSMTP();
         $phpmailer->Host = 'smtp.mailtrap.io';
         $phpmailer->SMTPAuth = true;
-        $phpmailer->Port = 2525;
+        $phpmailer->Port = 465;
         $phpmailer->Username = '5799bae7a182fb';
         $phpmailer->Password = '5faad02c771690';
 
@@ -66,7 +66,7 @@ class Email{
         $phpmailer->isSMTP();
         $phpmailer->Host = 'smtp.mailtrap.io';
         $phpmailer->SMTPAuth = true;
-        $phpmailer->Port = 2525;
+        $phpmailer->Port = 465;
         $phpmailer->Username = '5799bae7a182fb';
         $phpmailer->Password = '5faad02c771690';
         
