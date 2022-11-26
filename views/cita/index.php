@@ -25,7 +25,7 @@
 
         <form class="formulario">
             <div class="campo">
-                <label for="nombre">Nombre</label>
+                <!-- <label for="nombre">Nombre</label> -->
                 <input 
                     id="nombre"
                     type="text"
