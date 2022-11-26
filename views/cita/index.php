@@ -8,9 +8,9 @@
 <div id="app">
 
     <nav class="tabs">
-        <button class="actual" type="button" data-paso="1">Servicios</button>
-        <button type="button" data-paso="2">Información Cita</button>
-        <button type="button" data-paso="3">Resumen</button>
+        <button class="actual" type="button" data-paso="1">&#128722; 1. Servicios</button>
+        <button type="button" data-paso="2">&#128197; 2. Fecha & Hora</button>
+        <button type="button" data-paso="3">&#128203; 3. Confirmar</button>
     </nav>
 
     <div id="paso-1" class="seccion">
@@ -32,6 +32,7 @@
                     placeholder="Tu Nombre"
                     value="<?php echo $nombre; ?>"
                     disabled
+                    hidden
                 />
             </div>
 
