@@ -1,5 +1,5 @@
-<h1 class="nombre-pagina">Crear Nueva Cita</h1>
-<p class="descripcion-pagina">Elige tus servicios y coloca tus datos</p>
+<h1 class="nombre-pagina">Reservar Cita</h1>
+<!-- <p class="descripcion-pagina">Elige tus servicios y coloca tus datos</p> -->
 
 <?php 
     include_once __DIR__ . '/../templates/barra.php';
@@ -14,14 +14,14 @@
     </nav>
 
     <div id="paso-1" class="seccion">
-        <h2>Servicios</h2>
-        <p class="text-center">Elige tus servicios a continuación</p>
+        <!-- <h2>Servicios</h2> -->
+        <!-- <p class="text-center">Elige tus servicios a continuación</p> -->
         <div id="servicios" class="listado-servicios"></div>
     </div>
 
     <div id="paso-2" class="seccion">
-        <h2>Tus Datos y Cita</h2>
-        <p class="text-center">Coloca tus datos y fecha de cita</p>
+        <!-- <h2>Tus Datos y Cita</h2> -->
+        <!-- <p class="text-center">Coloca tus datos y fecha de cita</p> -->
 
         <form class="formulario">
             <div class="campo">

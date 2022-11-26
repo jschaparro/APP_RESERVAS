@@ -1,5 +1,5 @@
-<h1 class="nombre-pagina">Olvide Password</h1>
-<p class="descripcion-pagina">Reestablece tu password escribiendo tu email a continuación</p>
+<h1 class="nombre-pagina">Reestablecer Contraseña</h1>
+<p class="descripcion-pagina">Digita tu correo para reestablecer tu contraseña</p>
 
 
 <?php 
@@ -10,21 +10,23 @@
 <form class="formulario" action="/olvide" method="POST">
 
     <div class="campo">
-        <label for="email">E-mail</label>
+        <!-- <label for="email">E-mail</label> -->
         
         <input 
             type="email"
             id="email"
-            placeholder="Tu Email"
+            placeholder="Digita tu correo electrónico"
             name="email"
         />
     </div>
 
-    <input type="submit" value="Enviar Instrucciones" class="boton">
+    <div class="boton-centrar">
+        <input type="submit" value="Enviar Instrucciones" class="boton">
+    </div>
 
 </form>
 
 <div class="acciones">
-    <a href="/">¿Ya tienes una cuenta? Inicia Sesión</a>
-    <a href="/crear-cuenta">¿Aún no tienes una cuenta?</a>
+    <b><a href="/">Iniciar Sesión</a></b>
+    <b><a href="/crear-cuenta">Reestablecer Contraseña</a></b>
 </div>
