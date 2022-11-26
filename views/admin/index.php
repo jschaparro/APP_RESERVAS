@@ -37,19 +37,20 @@
 
         ?>
         <li>
-            <p>ID: <span><?php echo $cita->id; ?></span></p>
-            <p>Hora: <span><?php echo $cita->hora; ?></span></p>
+            <div class="datosReserva">
             <p>Cliente: <span><?php echo $cita->cliente; ?></span></p>
             <p>Email: <span><?php echo $cita->email; ?></span></p>
-            <p>Telefono: <span><?php echo $cita->telefono; ?></span></p>
-
-            <h3>Servicios</h3>
+            <!-- <p>ID: <span><?php echo $cita->id; ?></span></p> -->
+            <p>Hora: <span><?php echo $cita->hora; ?></span></p>
+             <p>Telefono: <span><?php echo $cita->telefono; ?></span></p>
+            </div>
+            <h3 class="heading-buscar">Servicios Reservados</h3>
         <?php
             $idCita = $cita->id;
         } //Fin de IF
             $total +=$cita->precio;
         ?>
-            <p class="servicio"><?php echo $cita->servicio ." " . $cita->precio; ?></p>
+            <p class="servicio"><?php echo $cita->servicio ." - <b>Precio:</b> $" . $cita->precio; ?></p>
         
             <?php
 
@@ -57,12 +58,14 @@
                 $proximo = $citas[$key +1]->id ?? 0;
 
                 if (esUltimo($actual, $proximo)){ ?>
+                    <div class="pieReservas">
                     <p class="total">Total <span>$ <?php echo $total ?> </span></p>
 
                     <form action="/api/eliminar" method="POST">
                         <input type="hidden" name="id" value="<?php echo $cita->id; ?>">
                         <input type="submit" class="boton-eliminar" value="Eliminar">
                     </form>
+                    </div>
 
                 <?php } 
             } //Fin de Foreach ?>
