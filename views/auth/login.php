@@ -28,12 +28,12 @@
     </div>
 
     <div class="boton-centrar">
-    <input type="submit" class="boton" value="Iniciar Sesión">
+        <input type="submit" class="boton" value="Iniciar Sesión">
     </div>
     
 </form>
 
 <div class="acciones">
-    <a href="/crear-cuenta">Regístrarse</a>
-    <a href="/olvide">Recuperar Contraseña</a>
+    <b><a href="/crear-cuenta">Regístrarse</a></b>
+    <b><a href="/olvide">Recuperar Contraseña</a></b>
 </div>
