@@ -36,8 +36,8 @@ class Email{
         // $phpmailer->Username = '5799bae7a182fb';
         // $phpmailer->Password = '5faad02c771690';
 
-        $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com','AppSalon.com');
+        $mail->setFrom('appreservas@appreservas.com');
+        $mail->addAddress('appreservas@appreservas.com','App Reservas');
         $mail->Subject = 'Confirma tu cuenta';
 
         //set HTML
@@ -80,9 +80,9 @@ class Email{
         
         
 
-        $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com','AppSalon.com');
-        $mail->Subject = 'Reestablecer tu password';
+        $mail->setFrom('appreservas@appreservas.com');
+        $mail->addAddress('appreservas@appreservas.com','App Reservas');
+        $mail->Subject = 'Confirma tu cuenta';
 
         //set HTML
         $mail->isHTML(TRUE);       
