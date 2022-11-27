@@ -20,21 +20,21 @@ class Email{
     public function enviarConfirmacion(){
         //Crear el objeto de email
 
-        // $mail = new PHPMailer();
-        // $mail->isSMTP();
-        // $mail->Host = 'smtp.mailtrap.io';
-        // $mail->SMTPAuth = true;
-        // $mail->Port = 465;
-        // $mail->Username = 'e24aae643f00da';
-        // $mail->Password = '00cf3405c0a9ed';
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = 'smtp.mailtrap.io';
+        $mail->SMTPAuth = true;
+        $mail->Port = 465;
+        $mail->Username = 'e24aae643f00da';
+        $mail->Password = '00cf3405c0a9ed';
 
-        $phpmailer = new PHPMailer();
-        $phpmailer->isSMTP();
-        $phpmailer->Host = 'smtp.mailtrap.io';
-        $phpmailer->SMTPAuth = true;
-        $phpmailer->Port = 465;
-        $phpmailer->Username = '5799bae7a182fb';
-        $phpmailer->Password = '5faad02c771690';
+        // $phpmailer = new PHPMailer();
+        // $phpmailer->isSMTP();
+        // $phpmailer->Host = 'smtp.mailtrap.io';
+        // $phpmailer->SMTPAuth = true;
+        // $phpmailer->Port = 465;
+        // $phpmailer->Username = '5799bae7a182fb';
+        // $phpmailer->Password = '5faad02c771690';
 
         $mail->setFrom('cuentas@appsalon.com');
         $mail->addAddress('cuentas@appsalon.com','AppSalon.com');
@@ -62,21 +62,21 @@ class Email{
     public function enviarInstrucciones(){
         //Crear el objeto de email
 
-        $phpmailer = new PHPMailer();
-        $phpmailer->isSMTP();
-        $phpmailer->Host = 'smtp.mailtrap.io';
-        $phpmailer->SMTPAuth = true;
-        $phpmailer->Port = 465;
-        $phpmailer->Username = '5799bae7a182fb';
-        $phpmailer->Password = '5faad02c771690';
+        // $phpmailer = new PHPMailer();
+        // $phpmailer->isSMTP();
+        // $phpmailer->Host = 'smtp.mailtrap.io';
+        // $phpmailer->SMTPAuth = true;
+        // $phpmailer->Port = 465;
+        // $phpmailer->Username = '5799bae7a182fb';
+        // $phpmailer->Password = '5faad02c771690';
         
-        // $mail = new PHPMailer();
-        // $mail->isSMTP();
-        // $mail->Host = 'smtp.mailtrap.io';
-        // $mail->SMTPAuth = true;
-        // $mail->Port = 465;
-        // $mail->Username = 'e24aae643f00da';
-        // $mail->Password = '00cf3405c0a9ed';
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        $mail->Host = 'smtp.mailtrap.io';
+        $mail->SMTPAuth = true;
+        $mail->Port = 465;
+        $mail->Username = 'e24aae643f00da';
+        $mail->Password = '00cf3405c0a9ed';
 
         $mail->setFrom('cuentas@appsalon.com');
         $mail->addAddress('cuentas@appsalon.com','AppSalon.com');
