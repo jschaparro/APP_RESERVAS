@@ -11,8 +11,13 @@
 
         <li>
             <div class="servicios-publicados">
-                <p>Nombre: <span><?php echo $servicio->nombre; ?></span></p>
-                <p>Precio: <span>$<?php echo $servicio->precio; ?></span></p>
+                <div class="anchoMaximo">
+                    <p>Nombre: <span><?php echo $servicio->nombre; ?></span></p>
+             
+                </div>
+                <div>
+                    <p>Precio: <span>$<?php echo $servicio->precio; ?></span></p>
+                </div>
             
             <div class="acciones">
                 <a class="servicios-publicados-actualizar" href="/servicios/actualizar?id=<?php echo $servicio->id; ?>">&#128190;Editar</a>
